@@ -1,0 +1,47 @@
+.photosCard {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    
+  }
+
+  .title {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  .photosGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+    max-width: 1200px;
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .photosGrid > div {
+
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+    }
+    
+    .photosPreviewCard {
+      width: 100%;
+      max-width: 800px;
+      height: 200px;
+      margin: 5rem auto;
+      background-color: white;
+      border: 4px solid #ffd700;
+      border-radius: 8px; 
+  
+    }
