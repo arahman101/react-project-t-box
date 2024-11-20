@@ -6,7 +6,8 @@ import axios from 'axios'
 export const NewsCard = () => {
   const [newsArticles, setNewsArticles] = useState([]);
 
-  const getArticles = async ()=>{
+
+ const getArticles = async ()=>{
     try{
       const res = await axios.get("http://localhost:4000/");
       setNewsArticles(res.data)
@@ -20,6 +21,7 @@ export const NewsCard = () => {
   useEffect(()=>{
     getArticles();
   },[])
+  
   
   return (
     <div className="newsCard">

@@ -2,13 +2,16 @@ import React from "react";
 import './TasksCard.css';
 import { Link } from "react-router-dom";
 
-const TasksPreview = ()=>{
+
+
+const TasksPreview = ({tasks})=>{
+    
 
     return(
     <div className="tasksPreviewCard">
-        <ol>
-    {localStorage.getItem("Tasks")}
-        </ol>
+        
+        {tasks}
+    
        <p> <Link to="/tasks">more...</Link> </p>
     </div>
     )

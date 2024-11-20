@@ -1,7 +1,7 @@
 import React,{useState,useRef} from "react";
 import  '../Login/login.css';
 import './signUp.css';
-import { Link,useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import register_btn from '../Assets/Register_button.png';
 import container_btn from '../Assets/Container.png';
 
